@@ -35,7 +35,7 @@ function main(word) {
 }
 async function getmeaning(word) {
     loading.style.display = "block";
-    const response = await fetch(`https:/www.dictionaryapi.com/api/v3/references/learners/json/${word}?key=${api}`);
+    const response = await fetch(`https://www.dictionaryapi.com/api/v3/references/learners/json/${word}?key=${api}`);
     const data = await response.json();
     if (!data.length) {
         loading.style.display = "none";
